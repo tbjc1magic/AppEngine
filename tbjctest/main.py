@@ -24,20 +24,30 @@ class MainPage(webapp2.RequestHandler):
     def get(self):
 
         template_values = {
-            'greetings': greetings,
+            'greetings': "Hello bobo!!!",
         }
 
         template = JINJA_ENVIRONMENT.get_template('index.html')
         self.response.write(template.render(template_values))
 
-class Guestbook(webapp2.RequestHandler):
+class testor(webapp2.RequestHandler):
 
-    def post(self):
-        self.response.write('<html><body>You wrote:<pre>')
-        self.response.write(cgi.escape(self.request.get('content')))
-        self.response.write('</pre></body></html>')
+    def get(self):
+
+        template_values = {
+        }
+
+        template = JINJA_ENVIRONMENT.get_template('testor.html')
+        self.response.write(template.render({}))
+
+class DataIncubator(webapp2.RequestHandler):
+
+    def get(self):
+        template = JINJA_ENVIRONMENT.get_template('DataIncubator.html')
+        self.response.write( template.render({}))
 
 application = webapp2.WSGIApplication([
-    ('/', MainPage),
-    ('/sign', Guestbook),
+    (r'/', MainPage),
+    ('/Other$',DataIncubator),
+    ('/testor$',testor),
 ], debug=True)

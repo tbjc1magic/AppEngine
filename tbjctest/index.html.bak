@@ -1,38 +1,31 @@
 <!DOCTYPE html>
 {% autoescape true %}
 <html>
-
-
   <head>
-    <link type="text/css" rel="stylesheet" href="/stylesheets/main.css" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css"  href="/stylesheets/main.css">
   </head>
 
   <body>
-    {% for greeting in greetings %}
-      {% if greeting.author %}
-        <b>{{ greeting.author.nickname() }}</b> wrote:
-      {% else %}
-       An anonymous person wrote:
-      {% endif %}
-      <blockquote>{{ greeting.content }}</blockquote>
-    {% endfor %}
 
-    <img src="http://www.htmldog.com/badge1.gif" width="120" height="90" alt="HTML Dog">
+    <div class="nav">
+        <ul>
+          <li><a class="active" href="">Home</a></li>
+          <li><a href="stylesheets/pdf/tbjcCV.pdf">Resume</a></li>
+          <li><a href="Other">Other</a></li>
+          <li><a href="HELIOS">HELIOS</a></li>
+        </ul>
 
+    </div>
 
-    <form action="/sign?guestbook_name={{ guestbook_name }}" method="post">
-      <div><textarea name="content" rows="3" cols="60"></textarea></div>
-      <div><input type="submit" value="Sign Guestbook"></div>
-    </form>
+    <div class="MM">
+    {{ greetings }}
 
-    <hr>
-
-    <form>Guestbook name:
-      <input value="{{ guestbook_name }}" name="guestbook_name">
-      <input type="submit" value="switch">
-    </form>
-
-    <a href="{{ url|safe }}">{{ url_linktext }}</a>
+    </div>
+    <p class="blocktest">This rather narrow block of text is centered. Note that the lines inside the block are not centered (they are left-aligned), unlike in the earlier example.</p>
 
   </body>
 </html>

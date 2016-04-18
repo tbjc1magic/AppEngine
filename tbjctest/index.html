@@ -1,13 +1,31 @@
 <!DOCTYPE html>
 {% autoescape true %}
 <html>
-
   <head>
-    <link type="text/css" rel="stylesheet" href="/stylesheets/main.css" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css"  href="/stylesheets/main.css">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
   </head>
 
   <body>
-    {% greetings %}
+
+    <div class="nav">
+        <ul>
+          <li><a class="active" href="#home">Home</a></li>
+          <li><a href="stylesheets/pdf/tbjcCV.pdf">Resume</a></li>
+          <li><a href="Other">Other</a></li>
+          <li><a href="testor">test</a></li>
+        </ul>
+
+    </div>
+
+        <div id="container" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+    <p class="blocktest">This rather narrow block of text is centered. Note that the lines inside the block are not centered (they are left-aligned), unlike in the earlier example.</p>
+
   </body>
 </html>
 {% endautoescape %}
