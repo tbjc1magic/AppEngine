@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+{% autoescape true %}
+<html>
+  <head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css"  href="/stylesheets/DataIncubator.css">
+
+<script type="text/javascript"src="/stylesheets/DataIncubator.js"> </script>
+  </head>
+
+  <body>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <div class="nav">
+        <ul>
+          <li><a class="active" href="/">Home</a></li>
+          <li><a href="stylesheets/pdf/tbjcCV.pdf">Resume</a></li>
+          <li><a href="Other">Other</a></li>
+          <li><a href="testor">test</a></li>
+        </ul>
+
+    </div>
+    <div class="container">
+    <div class="content">
+    <br>
+        <h2 class='title'>Data Incubator Challenge 3<h2>
+    <div class="content-body">
+        <div><p><strong>Data Source:</strong> NFl draft ranking and player information from 2009 to 2016; player stats for 4 college seasons before drafting year; college team records from 2008 to 2015. Data is scraped from <a href="http://www.nfl.com/draft/2014/tracker#dt-by-name-input:i/dt-tabs:dt-by-grade/dt-by-grade-input:1" >NFL.com</a>,<a href="http://sports.yahoo.com/ncaa/football/teams">yahoo sports</a> and <a href="http://espn.go.com/college-football/standings/_/season/2011">ESPN</a>.</p></div>
+
+        <div><strong>Goal:</strong> <p>1. Find the relations between draft ranking and player stats.</p>
+        <p>2. Find the drafting trends for professional team .</p>
+            </div>
+
+            <div><strong>Business Implication:</strong>
+                <p>The interets of the first goal folds into two points: 1. It helps young football players find the best strategy for maximizing their chance of being drafted, such as which positions are most needed currently, and which collges should they choose after they graduate from high school; 2. It shows general football audience what kind of players could be most succesful in the future and this can directly impact their fantasy football choices.</p>
+
+                <p>The second goal can be intersting for both current professional players and coachs. It shows them what types of players are professional teams recruiting most, which serves as an indication of the game styles.</p>
+
+        <p>The primary results are obtained from 3354 players from draft ranking since 2009(no data for 2010). The analysis measures the correlation between the players' stats and their draft ranking. Statistical results and plots are presented. </p>
+
+        <p>Figure 1 shows that players from all positions have approximately the same recruiting chance from 2009 to 2016, however the recruiting rate is different for each year in Fig. 2. For example, professional teams recruit more O-line(OG) and receiving(TE and WR) people in 2015, compared to 2012. This is an indication of more pro style games following 2015 and more defensive games in 2012.</p>
+
+        </div>
+
+    <div class="pic">
+    <figure>
+    <div id="highcharts1" style="min-width: 310px; height: 400px; max-width: 650px; margin: 0 auto"></div>
+    <figcaption>Fig. 1. This figure shows the percentage of drafted(blue) and all prospective players(black) in all positions. All of positions relatively have the same drafting percentage (drafted/prospective)</figcaption>
+    </figure>
+    </div>
+    <div class="pic">
+    <figure>
+    <div id="highcharts1" style="min-width: 310px; height: 400px; max-width: 650px; margin: 0 auto"></div>
+    <figcaption>Fig. 1. This figure shows the percentage of drafted(blue) and all prospective players(black) in all positions. All of positions relatively have the same drafting percentage (drafted/prospective)</figcaption>
+    </figure>
+    </div>
+    <br>
+    <div class="pic">
+    <figure>
+    <div id="highcharts2" style="min-width: 310px; height: 400px; max-width: 650px; margin: 0 auto"></div>
+    <figcaption>Fig. 2. This figure shows the annual percentage of drafted player at all positions.</figcaption>
+    </figure>
+    </div>
+    <br>
+    <div class="pic">
+    <figure>
+    <div id="highcharts2" style="min-width: 310px; height: 400px; max-width: 650px; margin: 0 auto"></div>
+    <figcaption>Fig. 2. This figure shows the annual percentage of drafted player at all positions.</figcaption>
+    </figure>
+    </div>
+
+    <div class="pic">
+    <figure>
+    <div id="highcharts3" style="min-width: 310px; height: 400px; max-width: 650px; margin: 0 auto"></div>
+    <figcaption>Fig. 3. This figure passing rating vs rushing yards per game for both drafted(red) and undrafted(blue) players. A few star players,including 'Cam Newton', 'Johnny Manziel' and 'Andrew Luck', are marked with star symbols for special references. </figcaption>
+    </figure>
+    </div>
+
+    <div class="pic">
+    <figure>
+    <div id="highcharts2" style="min-width: 310px; height: 400px; max-width: 650px; margin: 0 auto"></div>
+    <figcaption>Fig. 4. This figure passing rating vs rushing yards per game for both drafted(red) and undrafted(blue) players. A few star players,including 'Cam Newton', 'Johnny Manziel' and 'Andrew Luck', are marked with star symbols for special references. </figcaption>
+    </figure>
+    </div>
+
+    </div>
+    </div>
+    </div>
+  </body>
+</html>
+{% endautoescape %}
