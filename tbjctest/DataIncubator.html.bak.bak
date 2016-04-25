@@ -59,7 +59,7 @@
 
     <br>
     <figure>
-    <div id="highcharts1" style="min-width: 310px; height: 400px; max-width: 650px; margin: 0 auto"></div>
+    <div id="highcharts2" style="min-width: 310px; height: 400px; max-width: 650px; margin: 0 auto"></div>
     <figcaption>Fig. 2. This figure shows the annual percentage of drafted player at all positions.</figcaption>
     </figure>
     <br>

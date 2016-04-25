@@ -1,31 +1,43 @@
-<!DOCTYPE html>
-{% autoescape true %}
-<html>
-  <head>
+{% extends "frame.html" %}
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" type="text/css"  href="/stylesheets/main.css">
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+{% block head %}
+<link rel="stylesheet" type="text/css"  href="/stylesheets/index.css">
+{% endblock %}
 
-  </head>
+{% block title %}<h1>Bobo</h1> {% endblock %}
 
-  <body>
+{% block post %}
 
-    <div class="nav">
-        <ul>
-          <li><a class="active" href="#home">Home</a></li>
-          <li><a href="stylesheets/pdf/tbjcCV.pdf">Resume</a></li>
-          <li><a href="Other">Other</a></li>
-          <li><a href="testor">test</a></li>
-        </ul>
+<div class="post">
+    <h1 class="post_title">Introduction</h1>
+    <div class='selfie'>
+        <div class='left'>
+        <img src="/stylesheets/jianping.jpg" width="100%" height="100%" alt="A photo of Jianping Lai">
+        </div>
 
+        <div class='right'>
+            <p>My name is Jianping Lai, a senior physics Ph.D. candidate at Louisiana Stat University. My research focuses on measuring nuclear reactions of astrophysical interest, specifically rp-process reactions related to Type 1a Supernovae, X-Ray Burst.</p>
+
+            <p>For the past few years, I am involved in multiple research collaboration at JINA, Florida State University(FSU), Notre Dame university(ND), Argonne National Laboratory(ANL), and I primarily base at ANL, where I finished my thesis project "A Direct Study of 20Ne(alpha,p)23Na reaction using HELIOS". My everyday research work generally includes three folds: 1. Using simulations to design experimental setup, from sophisticated Monte Carlo simulation to naive kinematic calculation. Typically, I used C++ with Geant4 for most Monte Carlo simulations and Python for more straight forward calculations. One simulation, showing the protons data pattern at HELIOS, is included in this website. 2. I am responsible for analyzing large set of experimental data (~100 GB) and evaluating the statistical significance of resulted physical quantities. The primary tool I used for data analysis is "root", a powerful academic data analysis and visualization package based on C++.  3. Designing and developing the next generation heavy ion detector system, which includes the high precision cryogenic gas target system and the muli-channel position sensitive fast ionization chamber.</p>
+
+            <p>Besides research related abilities, I have extensive interets in programming techniques, including basic Objective Oriented Programming, OpenCL (heterogenous platform computing), Machine Learning, and much more. And I am very interested in finding a job in related fields.</p>
+        </div>
     </div>
 
-        <div id="container" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
-    <p class="blocktest">This rather narrow block of text is centered. Note that the lines inside the block are not centered (they are left-aligned), unlike in the earlier example.</p>
+    <div class="presentations">
+        <h3>Presentations </h3>
+        <p>"Studying 20Ne(alpha,p)23Na directly with HELIOS"  Oral presentation at APS Meeting, Santa Fe, NM, Octobor 2015</p>
+        <p>"Studying 20Ne(alpha,p)23Na directly with HELIOS"  Oral presentation at Gordon Research Seminar and poster at Gordon Research Conference, New London, NH, May 2015</p>
+        <p>"Studying 20Ne(alpha,p)23Na directly with HELIOS"  Oral presentation at JINA-CEE Frontiers in Nuclear Astrophysics Meeting, East Lansing, MI, March 2015</p>
+    <div>
+    <div class="publications">
+        <h3>Publications </h3>
+        <p>"Construction of Position Sensitive Ion Chambers" In preparation. Aug 2016 expected.</p>
+        <p>"A Direct Study of 20Ne(alpha,p)23Na Reaction with HELIOS" In preparation. Aug 2016 expected.</p>
+        <p>"Gamma spectroscopy of states in 32Cl relevant for the 31S(p, γ) 32 Cl reaction rate" submitted. </p>
+        <p>Carnelli, P. F. F., et al. "Measurements of Fusion Reactions of Low-Intensity Radioactive Carbon Beams on C 12 and their Implications for the Understanding of X-Ray Bursts." Physical review letters 112.19 (2014): 192701.</p>
+        <p>Carnelli, P. F. F., et al. "Multi-Sampling Ionization Chamber (MUSIC) for measurements of fusion reactions with radioactive beams." Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment 799 (2015): 197-202.</p>
+    <div>
+</div>
 
-  </body>
-</html>
-{% endautoescape %}
+{% endblock %}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% autoescape true %}
+<html>
+  <head>
+
+  <link rel="stylesheet" type="text/css" media="screen"  href="/stylesheets/frame.css">
+
+    {% block head %} link file here {% endblock %}
+
+  </head>
+
+  <body>
+    <div id='frame_whole'>
+        <div id='frame_title'>{% block title %} {% endblock %} </div>
+        <div id="frame_nav">
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="stylesheets/pdf/tbjcCV.pdf">Resume</a></li>
+              <li><a href="Physics">Physics</a></li>
+              <li><a href="Other">Other</a></li>
+            </ul>
+        </div>
+
+        <div id="frame_container" >
+            {% block post %}
+            {% endblock %}
+        </div>
+
+    </div>
+
+  </body>
+</html>
+{% endautoescape %}

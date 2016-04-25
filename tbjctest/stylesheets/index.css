@@ -1,0 +1,37 @@
+.post_title
+{
+    border-bottom: double 3px #000;
+}
+
+.post .selfie .left
+{
+    width:42%;
+    display: inline-block;
+    margin: 0px 15px 0px 0px;
+}
+
+.post .selfie .right
+{
+    width:55%;
+    color:white;
+    margin: 0px 0px 0px 0px;
+    display:inline-block;
+    vertical-align:top;
+}
+
+.post .selfie .right p
+{
+    font-size:12px;
+    margin-top:0px;
+    color:white;
+    text-align:justify;
+}
+
+.publications p
+{
+    font-size:12px;
+    color:white;
+    text-align:justify;
+   /* background-color:#FF0;*/
+    margin: 10px 5px 10px 5px;
+}

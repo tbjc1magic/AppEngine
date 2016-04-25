@@ -1,0 +1,43 @@
+body {
+  font-family: Verdana, Helvetica, sans-serif;
+  background-color: #0DDDD0;
+}
+
+div.MM {
+
+    margin-left: auto;
+    margin-right:auto;
+width: 6em;
+}
+
+p.blocktest {
+    margin-left: auto;
+    margin-right: auto;
+    width: 6em;
+    text-align: center;
+    color: rgb(0,0,255);
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+ .nav li {
+    float: left;
+}
+
+ .nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ .nav li a:hover {
+    background-color: #111;
+}
